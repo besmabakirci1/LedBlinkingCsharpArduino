@@ -146,4 +146,6 @@ Projede kullanılan devre aşağıdaki şekilde tasarlanmıştır:
 #### C# Windows Forms Uygulaması:
 ![Screenshot 2024-12-05 191137](https://github.com/user-attachments/assets/92dae0aa-5278-4dd2-964e-b3758c047ffd)
 
+https://github.com/user-attachments/assets/ffd41510-a322-4395-928c-a0bd7e168767
+
 
