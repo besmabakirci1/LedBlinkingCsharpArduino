@@ -1,0 +1,10 @@
+C:\Users\Besma\source\repos\GptLed\GptLed\bin\Debug\GptLed.exe.config
+C:\Users\Besma\source\repos\GptLed\GptLed\bin\Debug\GptLed.exe
+C:\Users\Besma\source\repos\GptLed\GptLed\bin\Debug\GptLed.pdb
+C:\Users\Besma\source\repos\GptLed\GptLed\obj\Debug\GptLed.csproj.AssemblyReference.cache
+C:\Users\Besma\source\repos\GptLed\GptLed\obj\Debug\GptLed.Form1.resources
+C:\Users\Besma\source\repos\GptLed\GptLed\obj\Debug\GptLed.Properties.Resources.resources
+C:\Users\Besma\source\repos\GptLed\GptLed\obj\Debug\GptLed.csproj.GenerateResource.cache
+C:\Users\Besma\source\repos\GptLed\GptLed\obj\Debug\GptLed.csproj.CoreCompileInputs.cache
+C:\Users\Besma\source\repos\GptLed\GptLed\obj\Debug\GptLed.exe
+C:\Users\Besma\source\repos\GptLed\GptLed\obj\Debug\GptLed.pdb
