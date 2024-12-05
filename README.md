@@ -1,4 +1,4 @@
-### **🌟 LedBlinking C# Arduino Project **
+### **🌟 Arduino ve C# ile LED Kontrolü **
 ---
 ## **Amaç**
 Bu proje, Arduino ve C# arayüzü kullanarak LED'lerin seri port üzerinden kontrolünü sağlar. Projenin ana hedefleri:
