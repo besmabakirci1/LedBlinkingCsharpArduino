@@ -1,15 +1,11 @@
-### **README - LedBlinking C# Arduino Project**
-
+### **LedBlinking C# Arduino Project**
 ---
-
 ## **Amaç**
 Bu proje, Arduino ve C# arayüzü kullanarak LED'lerin seri port üzerinden kontrolünü sağlar. Projenin ana hedefleri:
 1. **Seri Haberleşme Protokolünü Öğrenmek:** Arduino ve C# arasında veri transferi yaparak seri haberleşmenin temelini kavramak.
 2. **Donanım ve Yazılım Entegrasyonu:** Donanım bağlantılarını ve yazılım tabanlı kontrol mekanizmalarını deneyimlemek.
 3. **Kullanıcı Dostu Bir Kontrol Paneli:** LED kontrolü için Visual Studio kullanarak kullanıcı dostu bir C# arayüzü geliştirmek.
-
 ---
-
 ## **İçerik**
 Projede aşağıdaki özellikler ve araçlar kullanılmıştır:
 - **Donanım:** 
@@ -21,9 +17,7 @@ Projede aşağıdaki özellikler ve araçlar kullanılmıştır:
 - **Yazılım:**
   - Arduino IDE: Arduino'ya yüklemek için temel LED kontrol kodlarını yazmak.
   - Visual Studio: C# dilinde bir Windows Forms uygulaması geliştirmek.
-
----
-
+--
 ## **Kurulum İçin İhtiyaç Duyulanlar**
 1. **Arduino IDE Kurulumu:**
    - Arduino IDE'yi [buradan](https://www.arduino.cc/en/software) indirin ve bilgisayarınıza kurun.
@@ -35,26 +29,80 @@ Projede aşağıdaki özellikler ve araçlar kullanılmıştır:
      - `.Net Desktop Development`
      - `Data Storage and Processing`
 3. **Proje Kurulumu:**
-   - Visual Studio'da yeni bir Windows Forms App projesi oluşturun.
+   - Visual Studio'da yeni bir Windows Forms App(.Net Framework) projesi oluşturun.
    - Proje adı verirken Türkçe karakter kullanmamaya dikkat edin.
    - LTS (Long Term Support) framework’ü seçin.
-
 ---
-
 ## **Arayüz Özellikleri**
 Projede kullanılan C# arayüzü şu özelliklere sahiptir:
-1. **COM Port Seçimi:**
-   - Bağlı olan Arduino cihazınızın COM portunu seçebilmek için bir açılır liste (ComboBox).
-2. **LED Kontrol Butonları:**
+1. **LED Kontrol Butonları:**
    - **RedOn:** Kırmızı LED'i açmak için bir buton.
    - **RedOff:** Kırmızı LED'i kapatmak için bir buton.
    - **GreenOn:** Yeşil LED'i açmak için bir buton.
    - **GreenOff:** Yeşil LED'i kapatmak için bir buton.
-3. **Durum Geri Bildirimi:**
+2. **Durum Geri Bildirimi:**
    - Kullanıcıya bağlantı durumu ve LED'in açık/kapalı durumu hakkında bilgi veren bir durum etiketi (`label`).
+---
+### **COM Port Tanımlama ve Kullanımı**
+---
+## **COM Port Tanımlama ve Kullanımı**
+### **Port Tanımlaması**
+```csharp
+arduinoPort = new SerialPort
+{
+    PortName = "COM5",
+    BaudRate = 9600
+};
+```
+Bu kod, **`SerialPort`** sınıfının bir örneğini (`arduinoPort`) oluşturur ve port özelliklerini manuel olarak ayarlar:
+- **`PortName:`** Arduino'nun bağlı olduğu COM port adını belirtir (örneğin, `COM5`). Bu adı manuel olarak belirtiyoruz.
+- **`BaudRate:`** Veri iletişim hızını ayarlar. Arduino kodunda `Serial.begin(9600)` olarak tanımlandığı için burada da `9600` seçilmiştir.
 
 ---
+### **Portu Açma**
+```csharp
+arduinoPort.Open();
+```
 
+Bu kod, belirtilen COM portu üzerinden bağlantıyı başlatır:
+- Port açık değilse, bağlantı kurulur.
+- Eğer port zaten kullanılıyorsa veya geçersiz bir port adı atanmışsa, bir hata fırlatılır.
+
+---
+## **Manuel Port Tanımlamanın Avantajları**
+
+1. **Hızlı ve Statik Kullanım:**
+   - Belirli bir port adı biliniyorsa (`COM5` gibi), kullanıcıya port seçme veya giriş yapma gereksinimi bırakmaz.
+   - Tek bir cihazla çalışan projeler için uygun ve basit bir çözümdür.
+
+2. **Basitlik:**
+   - Kullanıcıya port seçimi sunulmaz, bu da kodu ve arayüzü daha sade hale getirir.
+   - Port adı, doğrudan kod içerisinde sabitlenir ve bu sayede basit projeler için ideal bir yapı sağlar.
+
+3. **Hata Yönetimi Kolaylığı:**
+   - Port yanlış tanımlanırsa ya da port zaten kullanılıyorsa, bu durumu kod içerisinde ele alabilirsiniz.
+   - **Hata Yönetimi Örneği:**
+     ```csharp
+     try
+     {
+         arduinoPort.Open();
+         Console.WriteLine("Bağlantı başarılı!");
+     }
+     catch (UnauthorizedAccessException)
+     {
+         Console.WriteLine("Seçilen port başka bir uygulama tarafından kullanılıyor.");
+     }
+     catch (IOException)
+     {
+         Console.WriteLine("Port mevcut değil veya bağlantı kurulamadı.");
+     }
+     catch (Exception ex)
+     {
+         Console.WriteLine($"Bağlantı hatası: {ex.Message}");
+     }
+     ```
+
+---
 ## **Devre Şeması ve Görseli**
 Projede kullanılan devre aşağıdaki şekilde tasarlanmıştır:
 1. **Kırmızı LED:**
