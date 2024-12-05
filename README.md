@@ -1,8 +1,8 @@
-### **LedBlinking C# Arduino Project**
+### **🌟 LedBlinking C# Arduino Project **
 ---
 ## **Amaç**
 Bu proje, Arduino ve C# arayüzü kullanarak LED'lerin seri port üzerinden kontrolünü sağlar. Projenin ana hedefleri:
-1. **Seri Haberleşme Protokolünü Öğrenmek:** Arduino ve C# arasında veri transferi yaparak seri haberleşmenin temelini kavramak.
+1. **📡Seri Haberleşme Protokolünü Öğrenmek:** Arduino ve C# arasında veri transferi yaparak seri haberleşmenin temelini kavramak.
 2. **Donanım ve Yazılım Entegrasyonu:** Donanım bağlantılarını ve yazılım tabanlı kontrol mekanizmalarını deneyimlemek.
 3. **Kullanıcı Dostu Bir Kontrol Paneli:** LED kontrolü için Visual Studio kullanarak kullanıcı dostu bir C# arayüzü geliştirmek.
 ---
@@ -18,7 +18,7 @@ Projede aşağıdaki özellikler ve araçlar kullanılmıştır:
   - Arduino IDE: Arduino'ya yüklemek için temel LED kontrol kodlarını yazmak.
   - Visual Studio: C# dilinde bir Windows Forms uygulaması geliştirmek.
 --
-## **Kurulum İçin İhtiyaç Duyulanlar**
+## **🔧Kurulum İçin İhtiyaç Duyulanlar**
 1. **Arduino IDE Kurulumu:**
    - Arduino IDE'yi [buradan](https://www.arduino.cc/en/software) indirin ve bilgisayarınıza kurun.
    - Arduino Uno cihazınızı bilgisayara bağlayın ve uygun COM portunu seçin.
@@ -32,6 +32,8 @@ Projede aşağıdaki özellikler ve araçlar kullanılmıştır:
    - Visual Studio'da yeni bir Windows Forms App(.Net Framework) projesi oluşturun.
    - Proje adı verirken Türkçe karakter kullanmamaya dikkat edin.
    - LTS (Long Term Support) framework’ü seçin.
+  
+- https://www.youtube.com/watch?v=liKyYxO29GE bu videoyu kullanıp kurulum yapabilirsiniz ancak hocanın windows forms app kullanmış olduğunu göreceksiniz. Ancak bunu kullanınca "Serial Port" kullanamıyor olduğunuzu unutmayın, Tool boxta yok !..
 ---
 ## **Arayüz Özellikleri**
 Projede kullanılan C# arayüzü şu özelliklere sahiptir:
@@ -43,7 +45,7 @@ Projede kullanılan C# arayüzü şu özelliklere sahiptir:
 2. **Durum Geri Bildirimi:**
    - Kullanıcıya bağlantı durumu ve LED'in açık/kapalı durumu hakkında bilgi veren bir durum etiketi (`label`).
 ---
-### **COM Port Tanımlama ve Kullanımı**
+### **🔌COM Port Tanımlama ve Kullanımı**
 ---
 ## **COM Port Tanımlama ve Kullanımı**
 ### **Port Tanımlaması**
@@ -103,7 +105,7 @@ Bu kod, belirtilen COM portu üzerinden bağlantıyı başlatır:
      ```
 
 ---
-## **Devre Şeması ve Görseli**
+## **⚡Devre Şeması ve Görseli**
 Projede kullanılan devre aşağıdaki şekilde tasarlanmıştır:
 1. **Kırmızı LED:**
    - Anot bacağı Arduino'nun D8 pinine bağlı.
@@ -118,3 +120,11 @@ Projede kullanılan devre aşağıdaki şekilde tasarlanmıştır:
 #### **Devre Görseli:**
 ![Devre Şeması](https://github.com/user-attachments/assets/951808c5-f4dc-4462-8462-5a895223e429)
 
+#### Devre Şeması:
+![Devre Şeması](https://github.com/user-attachments/assets/9d59806b-51db-40e1-8381-89ed14ba55b2)
+
+#### C# Windows Forms Uygulaması:
+![Screenshot 2024-12-05 191137](https://github.com/user-attachments/assets/92dae0aa-5278-4dd2-964e-b3758c047ffd)
+
+💡 Ekstra İpuçları
+COM Port Sorunu: Eğer port tanınmıyorsa, "Aygıt Yöneticisi" üzerinden COM portu kontrol edin.
