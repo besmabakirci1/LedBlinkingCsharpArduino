@@ -70,6 +70,8 @@ Bu kod, belirtilen COM portu üzerinden bağlantıyı başlatır:
 - Port açık değilse, bağlantı kurulur.
 - Eğer port zaten kullanılıyorsa veya geçersiz bir port adı atanmışsa, bir hata fırlatılır.
 
+💡 Ekstra İpuçları
+COM Port Sorunu: Eğer port tanınmıyorsa, "Aygıt Yöneticisi" üzerinden COM portu kontrol edin.
 ---
 ## **Manuel Port Tanımlamanın Avantajları**
 
@@ -126,5 +128,4 @@ Projede kullanılan devre aşağıdaki şekilde tasarlanmıştır:
 #### C# Windows Forms Uygulaması:
 ![Screenshot 2024-12-05 191137](https://github.com/user-attachments/assets/92dae0aa-5278-4dd2-964e-b3758c047ffd)
 
-💡 Ekstra İpuçları
-COM Port Sorunu: Eğer port tanınmıyorsa, "Aygıt Yöneticisi" üzerinden COM portu kontrol edin.
+
