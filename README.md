@@ -70,6 +70,24 @@ Bu kod, belirtilen COM portu üzerinden bağlantıyı başlatır:
 - Port açık değilse, bağlantı kurulur.
 - Eğer port zaten kullanılıyorsa veya geçersiz bir port adı atanmışsa, bir hata fırlatılır.
 
+#### sonuç olarak bu şekilde kullandım:
+```csharp
+ public partial class Form1 : Form
+    {
+        SerialPort arduinoPort;
+        public Form1()
+        {
+            InitializeComponent();
+            arduinoPort = new SerialPort
+            {
+                PortName = "COM5",
+                BaudRate = 9600
+            };
+
+            arduinoPort.Open();
+        }
+```
+
 💡 Ekstra İpuçları
 COM Port Sorunu: Eğer port tanınmıyorsa, "Aygıt Yöneticisi" üzerinden COM portu kontrol edin.
 ---
