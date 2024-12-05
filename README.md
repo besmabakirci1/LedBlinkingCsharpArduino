@@ -148,4 +148,19 @@ Projede kullanılan devre aşağıdaki şekilde tasarlanmıştır:
 
 https://github.com/user-attachments/assets/ffd41510-a322-4395-928c-a0bd7e168767
 
+---
 
+Yaparken karşılaştığım hatalar : 
+1. Yazılımsal : COM portunun manual olarak set etmemesinden kaynaklı string array olarak alınması
+![Screenshot 2024-12-06 at 1 25 47 am](https://github.com/user-attachments/assets/ab3e012f-c216-4a64-ba21-403fac513905)
+2. Donanımsal : devreyi yanlış bağlamak ve bu yüzden kırmızı yanarken yeşil yanmıyor aksine kırmızının sönmesine neden oluyordu.
+
+Donanım Bağlantısını Kontrol Etmek için:
+1.Bağlantıları Doğrulayın:
+Arduino'yu bilgisayara doğru şekilde bağladığınızdan emin olun. USB kablonuzun çalıştığını kontrol edin.
+Arduino'nun üzerindeki "ON" ve "TX/RX" LED'lerinin yanıp yanmadığını kontrol edin.
+2.Bağlı Portu Doğru Tanımlamak için:
+Yanlış COM portu kullanıyor olabilirsiniz. Doğru portu bulmak için şu adımları izleyin:
+Windows'ta: Aygıt Yöneticisi'ni açın (Başlat > Aygıt Yöneticisi).
+"Bağlantı Noktaları (COM ve LPT)" sekmesine tıklayın.
+Arduino'nuzun hangi portta olduğunu görün (örneğin, COM7 yerine COM5 olabilir).
