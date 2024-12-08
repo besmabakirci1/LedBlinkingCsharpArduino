@@ -1,4 +1,39 @@
 # 🌟 Arduino ve C# ile LED Kontrolü 
+---
+### Amaç
+Bu proje, Arduino ve C# arayüzü kullanarak LED'lerin seri port üzerinden kontrolünü sağlar. Projenin ana hedefleri:
+1. **📡Seri Haberleşme Protokolünü Öğrenmek:** Arduino ve C# arasında veri transferi yaparak seri haberleşmenin temelini kavramak.
+2. **Donanım ve Yazılım Entegrasyonu:** Donanım bağlantılarını ve yazılım tabanlı kontrol mekanizmalarını deneyimlemek.
+3. **Kullanıcı Dostu Bir Kontrol Paneli:** LED kontrolü için Visual Studio kullanarak kullanıcı dostu bir C# arayüzü geliştirmek.
+---
+## İçerik
+Projede aşağıdaki özellikler ve araçlar kullanılmıştır:
+- Donanım:
+  - Arduino Uno
+  - 2 LED (Kırmızı ve Yeşil)
+  - 220Ω Dirençler
+  - Breadboard
+  - Bağlantı Kabloları
+- Yazılım:
+  - Arduino IDE: Arduino'ya yüklemek için temel LED kontrol kodlarını yazmak.
+  - Visual Studio: C# dilinde bir Windows Forms uygulaması geliştirmek.
+--
+## 🔧 Kurulum İçin İhtiyaç Duyulanlar
+1. Arduino IDE Kurulumu:
+   - Arduino IDE'yi [buradan](https://www.arduino.cc/en/software) indirin ve bilgisayarınıza kurun.
+   - Arduino Uno cihazınızı bilgisayara bağlayın ve uygun COM portunu seçin.
+   - Arduino kodlarını yükleyin.
+2. Visual Studio Kurulumu:
+   - Visual Studio'yu [buradan](https://visualstudio.microsoft.com/downloads/) indirin.
+   - Kurulum sırasında şu bileşenleri seçin:
+     - `.Net Desktop Development`
+     - `Data Storage and Processing`
+3. Proje Kurulumu:
+   - Visual Studio'da yeni bir Windows Forms App(.Net Framework) projesi oluşturun.
+   - Proje adı verirken Türkçe karakter kullanmamaya dikkat edin.
+   - LTS (Long Term Support) framework’ü seçin.
+  
+- https://www.youtube.com/watch?v=liKyYxO29GE bu videoyu kullanıp kurulum yapabilirsiniz ancak hocanın windows forms app kullanmış olduğunu göreceksiniz. Ancak bunu kullanınca "Serial Port" kullanamıyor olduğunuzu unutmayın, Tool boxta yok !..
 
 ### ⚡ Devre Şeması ve Görseli 
 Projede kullanılan devre aşağıdaki şekilde tasarlanmıştır:
@@ -21,42 +56,6 @@ Projede kullanılan devre aşağıdaki şekilde tasarlanmıştır:
 ![Screenshot 2024-12-05 191137](https://github.com/user-attachments/assets/92dae0aa-5278-4dd2-964e-b3758c047ffd)
 
 https://github.com/user-attachments/assets/ffd41510-a322-4395-928c-a0bd7e168767
-
----
-### Amaç
-Bu proje, Arduino ve C# arayüzü kullanarak LED'lerin seri port üzerinden kontrolünü sağlar. Projenin ana hedefleri:
-1. **📡Seri Haberleşme Protokolünü Öğrenmek:** Arduino ve C# arasında veri transferi yaparak seri haberleşmenin temelini kavramak.
-2. **Donanım ve Yazılım Entegrasyonu:** Donanım bağlantılarını ve yazılım tabanlı kontrol mekanizmalarını deneyimlemek.
-3. **Kullanıcı Dostu Bir Kontrol Paneli:** LED kontrolü için Visual Studio kullanarak kullanıcı dostu bir C# arayüzü geliştirmek.
----
-## İçerik
-Projede aşağıdaki özellikler ve araçlar kullanılmıştır:
-- Donanım:
-  - Arduino Uno
-  - 2 LED (Kırmızı ve Yeşil)
-  - 220Ω Dirençler
-  - Breadboard
-  - Bağlantı Kabloları
-- Yazılım:
-  - Arduino IDE: Arduino'ya yüklemek için temel LED kontrol kodlarını yazmak.
-  - Visual Studio: C# dilinde bir Windows Forms uygulaması geliştirmek.
---
-## 🔧Kurulum İçin İhtiyaç Duyulanlar
-1. Arduino IDE Kurulumu:
-   - Arduino IDE'yi [buradan](https://www.arduino.cc/en/software) indirin ve bilgisayarınıza kurun.
-   - Arduino Uno cihazınızı bilgisayara bağlayın ve uygun COM portunu seçin.
-   - Arduino kodlarını yükleyin.
-2. Visual Studio Kurulumu:
-   - Visual Studio'yu [buradan](https://visualstudio.microsoft.com/downloads/) indirin.
-   - Kurulum sırasında şu bileşenleri seçin:
-     - `.Net Desktop Development`
-     - `Data Storage and Processing`
-3. Proje Kurulumu:
-   - Visual Studio'da yeni bir Windows Forms App(.Net Framework) projesi oluşturun.
-   - Proje adı verirken Türkçe karakter kullanmamaya dikkat edin.
-   - LTS (Long Term Support) framework’ü seçin.
-  
-- https://www.youtube.com/watch?v=liKyYxO29GE bu videoyu kullanıp kurulum yapabilirsiniz ancak hocanın windows forms app kullanmış olduğunu göreceksiniz. Ancak bunu kullanınca "Serial Port" kullanamıyor olduğunuzu unutmayın, Tool boxta yok !..
 ---
 ## Arayüz Özellikleri
 Projede kullanılan C# arayüzü şu özelliklere sahiptir:
