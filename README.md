@@ -1,5 +1,18 @@
 ### **🌟 Arduino ve C# ile LED Kontrolü **
 ---
+
+#### **Devre Görseli:**
+![Devre Şeması](https://github.com/user-attachments/assets/951808c5-f4dc-4462-8462-5a895223e429)
+
+#### Devre Şeması:
+![Devre Şeması](https://github.com/user-attachments/assets/9d59806b-51db-40e1-8381-89ed14ba55b2)
+
+#### C# Windows Forms Uygulaması:
+![Screenshot 2024-12-05 191137](https://github.com/user-attachments/assets/92dae0aa-5278-4dd2-964e-b3758c047ffd)
+
+https://github.com/user-attachments/assets/ffd41510-a322-4395-928c-a0bd7e168767
+
+---
 ## **Amaç**
 Bu proje, Arduino ve C# arayüzü kullanarak LED'lerin seri port üzerinden kontrolünü sağlar. Projenin ana hedefleri:
 1. **📡Seri Haberleşme Protokolünü Öğrenmek:** Arduino ve C# arasında veri transferi yaparak seri haberleşmenin temelini kavramak.
@@ -136,18 +149,6 @@ Projede kullanılan devre aşağıdaki şekilde tasarlanmıştır:
 3. **Bağlantılar:**
    - Arduino, bilgisayara USB kablosu ile bağlanır.
    - Breadboard, LED'leri ve dirençleri birbirine bağlamak için kullanılır.
-
-#### **Devre Görseli:**
-![Devre Şeması](https://github.com/user-attachments/assets/951808c5-f4dc-4462-8462-5a895223e429)
-
-#### Devre Şeması:
-![Devre Şeması](https://github.com/user-attachments/assets/9d59806b-51db-40e1-8381-89ed14ba55b2)
-
-#### C# Windows Forms Uygulaması:
-![Screenshot 2024-12-05 191137](https://github.com/user-attachments/assets/92dae0aa-5278-4dd2-964e-b3758c047ffd)
-
-https://github.com/user-attachments/assets/ffd41510-a322-4395-928c-a0bd7e168767
-
 ---
 
 Yaparken karşılaştığım hatalar : 
