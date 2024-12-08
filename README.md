@@ -1,6 +1,16 @@
-### **🌟 Arduino ve C# ile LED Kontrolü **
+** 🌟 Arduino ve C# ile LED Kontrolü **
 ---
-
+## **⚡Devre Şeması ve Görseli**
+Projede kullanılan devre aşağıdaki şekilde tasarlanmıştır:
+1. **Kırmızı LED:**
+   - Anot bacağı Arduino'nun D8 pinine bağlı.
+   - Katot bacağı 220Ω direnç üzerinden GND'ye bağlanır.
+2. **Yeşil LED:**
+   - Anot bacağı Arduino'nun D9 pinine bağlı.
+   - Katot bacağı 220Ω direnç üzerinden GND'ye bağlanır.
+3. **Bağlantılar:**
+   - Arduino, bilgisayara USB kablosu ile bağlanır.
+   - Breadboard, LED'leri ve dirençleri birbirine bağlamak için kullanılır.
 #### **Devre Görseli:**
 ![Devre Şeması](https://github.com/user-attachments/assets/951808c5-f4dc-4462-8462-5a895223e429)
 
@@ -136,19 +146,6 @@ COM Port Sorunu: Eğer port tanınmıyorsa, "Aygıt Yöneticisi" üzerinden COM 
          Console.WriteLine($"Bağlantı hatası: {ex.Message}");
      }
      ```
-
----
-## **⚡Devre Şeması ve Görseli**
-Projede kullanılan devre aşağıdaki şekilde tasarlanmıştır:
-1. **Kırmızı LED:**
-   - Anot bacağı Arduino'nun D8 pinine bağlı.
-   - Katot bacağı 220Ω direnç üzerinden GND'ye bağlanır.
-2. **Yeşil LED:**
-   - Anot bacağı Arduino'nun D9 pinine bağlı.
-   - Katot bacağı 220Ω direnç üzerinden GND'ye bağlanır.
-3. **Bağlantılar:**
-   - Arduino, bilgisayara USB kablosu ile bağlanır.
-   - Breadboard, LED'leri ve dirençleri birbirine bağlamak için kullanılır.
 ---
 
 Yaparken karşılaştığım hatalar : 
