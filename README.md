@@ -10,7 +10,7 @@ Projede aşağıdaki özellikler ve araçlar kullanılmıştır:
 - Donanım:
   - Arduino Uno
   - 2 LED (Kırmızı ve Yeşil)
-  - 220Ω Dirençler
+  - 330Ω Dirençler
   - Breadboard
   - Bağlantı Kabloları
 - Yazılım:
