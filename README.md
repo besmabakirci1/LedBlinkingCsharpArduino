@@ -1,6 +1,5 @@
 # 🌟 Arduino ve C# ile LED Kontrolü 
----
-### Amaç
+## Amaç
 Bu proje, Arduino ve C# arayüzü kullanarak LED'lerin seri port üzerinden kontrolünü sağlar. Projenin ana hedefleri:
 1. **📡Seri Haberleşme Protokolünü Öğrenmek:** Arduino ve C# arasında veri transferi yaparak seri haberleşmenin temelini kavramak.
 2. **Donanım ve Yazılım Entegrasyonu:** Donanım bağlantılarını ve yazılım tabanlı kontrol mekanizmalarını deneyimlemek.
@@ -56,6 +55,7 @@ Projede kullanılan devre aşağıdaki şekilde tasarlanmıştır:
 ![Screenshot 2024-12-05 191137](https://github.com/user-attachments/assets/92dae0aa-5278-4dd2-964e-b3758c047ffd)
 
 https://github.com/user-attachments/assets/ffd41510-a322-4395-928c-a0bd7e168767
+
 ---
 ## Arayüz Özellikleri
 Projede kullanılan C# arayüzü şu özelliklere sahiptir:
